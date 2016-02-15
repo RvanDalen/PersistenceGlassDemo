@@ -1,0 +1,12 @@
+﻿@inherits GlassView<PersistenceGlassDemo.Models.Pages.NewsPage>
+           
+<h1>@Editable(m => m.Headline)</h1>
+<h2>@Editable(m => m.PublicationDate)</h2>
+
+@if (IsInEditingMode)
+{
+    <h3>Teaser text:</h3>
+    @Editable(m => m.TeaserText)
+}
+
+@Editable(m => m.FullMessage)

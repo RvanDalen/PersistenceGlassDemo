@@ -1,0 +1,17 @@
+﻿@model List<PersistenceGlassDemo.Models.Pages.NewsPage>
+
+@if (Model.Count == 0 && Html.Glass().IsInEditingMode)
+{
+    <h2>No news found, select a valid news source item.</h2>
+}
+
+<ul>
+    @foreach (var newsItem in Model)
+    {
+        <li>
+            <a href="@Url.SitecoreUrl(newsItem)">@newsItem.Headline</a>
+            <p>@newsItem.PublicationDate</p>
+            @newsItem.TeaserText
+        </li>
+    }
+</ul>       
