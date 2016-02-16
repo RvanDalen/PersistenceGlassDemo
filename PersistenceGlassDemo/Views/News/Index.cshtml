@@ -10,8 +10,8 @@
     {
         <li>
             <a href="@Url.SitecoreUrl(newsItem)">@newsItem.Headline</a>
-            <p>@newsItem.PublicationDate</p>
+            <p>@newsItem.PublicationDate.ToString("D")</p>
             @newsItem.TeaserText
         </li>
     }
-</ul>       
+</ul>

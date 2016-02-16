@@ -1,6 +1,6 @@
-﻿using Glass.Mapper.Sc.Configuration;
+﻿using System;
+using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.Configuration.Attributes;
-using Sitecore.Shell.Applications.ContentEditor;
 
 namespace PersistenceGlassDemo.Models.Pages
 {

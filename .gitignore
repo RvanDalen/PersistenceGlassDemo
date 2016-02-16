@@ -4,6 +4,9 @@
 # Sitecore dependencies
 Depends/Sitecore/*.dll
 
+# Publish settings
+*.pubxml
+
 # User-specific files
 *.suo
 *.user
