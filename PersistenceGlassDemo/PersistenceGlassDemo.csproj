@@ -52,8 +52,8 @@
       <HintPath>..\packages\BoC.Logging.Sitecore.4.0.0.0\lib\net45\BoC.Logging.Sitecore.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="BoC.Persistence.SitecoreGlass, Version=4.0.15.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\BoC.Persistence.SitecoreGlass.4.0.15.0\lib\net45\BoC.Persistence.SitecoreGlass.dll</HintPath>
+    <Reference Include="BoC.Persistence.SitecoreGlass, Version=4.0.16.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BoC.Persistence.SitecoreGlass.4.0.16.0\lib\net45\BoC.Persistence.SitecoreGlass.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="BoC.Sitecore.Mvc, Version=4.0.8.0, Culture=neutral, processorArchitecture=MSIL">
@@ -238,6 +238,7 @@
     <Compile Include="Models\Pages\StandardPage.cs" />
     <Compile Include="Pipelines\GetChromeData\SuperFieldEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\NewsRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />

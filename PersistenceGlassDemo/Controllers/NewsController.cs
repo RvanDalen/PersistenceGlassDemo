@@ -19,7 +19,7 @@ namespace PersistenceGlassDemo.Controllers
         {
             var newsItems = _newsRepository.Query()
                                            .Where(news => news.ParentIds.Contains(datasource.NewsRootId))
-                                           .OrderByDescending(news => news.PublicationDate)
+                                           .OrderByDescending(news => news.PublicationDate) //If you uncomment the NewsRepositories class then you can comment out or remove this line
                                            .Skip(currentPage - 1)
                                            .Take(datasource.PageSize)
                                            .ToList();
